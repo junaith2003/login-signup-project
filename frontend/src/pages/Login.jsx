@@ -7,7 +7,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const resp = await fetch("https://login-signup-project-1.onrender.com", {
+    const resp = await fetch("https://login-signup-project-1.onrender.com/login", {
       method: "POST",
       body: JSON.stringify(user),
       headers: { "Content-Type": "application/json" },
