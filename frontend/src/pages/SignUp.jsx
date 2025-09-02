@@ -8,7 +8,7 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const resp = await fetch("http://localhost:8000/user", {
+    const resp = await fetch("https://login-signup-project-1.onrender.com", {
       method: "POST",
       body: JSON.stringify(user),
       headers: { "Content-Type": "application/json" },
